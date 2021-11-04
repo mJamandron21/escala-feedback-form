@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+<div class="login_form">
+  <div class="left">
+    <div>
+      <!-- <h2>Enjo</h2> -->
+      <p>
+        "From the panoramic view of Taal volcano, Escala Tagaytay is an ideal spot from which to discover Tagaytay."
+      </p>
+    </div>
+   
+  </div>
+
+  <div class="right">
+    <h1 id="title">Feedback Form</h1>
+    <form action="" id="survey_form">
+      <div class="input_container">
+        <div class="form_group">
+          <label for="name" id="name-label">Full Name</label>
+          <input type="text" placeholder="e.g. Juan Dela Cruz" id="name" required>
+          
+        </div>
+
+        
+        <div class="form_group">
+          <label for="name" id="email-label">Email</label>
+          <input type="email" placeholder="e.g. juandelacruz@email.com" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          
+        </div>
+
+        <div class="form_group">
+          <label for="name" id="number-label">Contact Number</label>
+          <input type="text" placeholder="e.g 09170080070" id="number" pattern="[0]+\d{10}$" required>
+         
+        </div>
+
+        <!-- <div class="form_group">
+          <div class="flex-row-item">
+            <label for="sex" id="sex-label">Sex</label>
+            <input type="radio" name="sex" value="male" id="sex-male" required="">
+            <p>Male</p>
+    
+            <input type="radio" name="sex" value="female" id="sex-female">
+            <p>Female</p>
+            
+          </div> -->
+
+        </div>
+        <div class="form_group">
+          <label for="room" id="room-label">Room</label>
+          <select name="room" id="dropdown" placeholder="Select Room" required="">
+            <option value="" disabled="disabled" selected="">Select Room</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suit">Suit</option>
+            <option value="Double Deluxe">Double Deluxe</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="things" id="things-label">Things you love about us? (Please select all that apply)</label>
+          <div class="flex-row-item">
+            <div class="flex-col-item">
+              <div class="checkbox-item">
+                <input type="checkbox" name="source" value="food" id="food">
+                <label id="choose-label" for="food">Food/Restaurant</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" name="source" value="staffs" id="staffs">
+                <label id="choose-label" for="staffs">Staffs</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" name="source" value="security" id="security">
+                <label id="choose-label" for="security">Security</label>
+              </div>
+            </div>
+            <div class="flex-col-item">
+              <div class="checkbox-item">
+                <input type="checkbox" name="source" value="friends" id="friends">
+                <label id="choose-label" for="friends">Friends</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" name="source" value="newspaper" id="newspaper">
+                <label id="choose-label" for="newspaper">Newspaper</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" name="source" value="others" id="others">
+                <label id="choose-label" for="others">Others</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="btn">
+          <input type="submit" >
+        </div>
+
+      </div>
+
+    </form>
+
+    <div class="form_bottom">
+      
+    </div>
+  
+  </div>
+</div>
+
+</body>
+</html>
+
