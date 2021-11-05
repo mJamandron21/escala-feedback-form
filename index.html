@@ -14,19 +14,21 @@
 <body>
 
 
-<div class="login_form">
+<div class="feedback_form">
   <div class="left">
     <div>
-      <!-- <h2>Enjo</h2> -->
-      <p>
+     
+      <h2>
         "From the panoramic view of Taal volcano, Escala Tagaytay is an ideal spot from which to discover Tagaytay."
-      </p>
+      </h2>
+
     </div>
    
   </div>
 
   <div class="right">
     <h1 id="title">Feedback Form</h1>
+    <p> "Always happy to hear from you. Because You matters!"</p>
     <form action="" id="survey_form">
       <div class="input_container">
         <div class="form_group">
@@ -37,27 +39,17 @@
 
         
         <div class="form_group">
-          <label for="name" id="email-label">Email</label>
+          <label for="email" id="email-label">Email</label>
           <input type="email" placeholder="e.g. juandelacruz@email.com" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
           
         </div>
 
         <div class="form_group">
-          <label for="name" id="number-label">Contact Number</label>
+          <label for="tel" id="number-label">Contact Number</label>
           <input type="text" placeholder="e.g 09170080070" id="number" pattern="[0]+\d{10}$" required>
          
         </div>
 
-        <!-- <div class="form_group">
-          <div class="flex-row-item">
-            <label for="sex" id="sex-label">Sex</label>
-            <input type="radio" name="sex" value="male" id="sex-male" required="">
-            <p>Male</p>
-    
-            <input type="radio" name="sex" value="female" id="sex-female">
-            <p>Female</p>
-            
-          </div> -->
 
         </div>
         <div class="form_group">
@@ -65,9 +57,13 @@
           <select name="room" id="dropdown" placeholder="Select Room" required="">
             <option value="" disabled="disabled" selected="">Select Room</option>
             <option value="Deluxe">Deluxe</option>
-            <option value="Suit">Suit</option>
-            <option value="Double Deluxe">Double Deluxe</option>
-            <option value="Premium">Premium</option>
+            <option value="Deluxe Primier">Premier</option>
+            <option value="Premier">Premier</option>
+            <option value="Cellar Premier">Cellar Primier</option>
+            <option value="Executive">Executive</option>
+            <option value="Family Prestige">Family Prestige</option>
+            <option value="Prestige">Prestige</option>
+            <option value="Exective Triple">Executive Triple</option>
           </select>
         </div>
 
@@ -90,22 +86,101 @@
             </div>
             <div class="flex-col-item">
               <div class="checkbox-item">
-                <input type="checkbox" name="source" value="friends" id="friends">
-                <label id="choose-label" for="friends">Friends</label>
+                <input type="checkbox" name="source" value="services" id="services">
+                <label id="choose-label" for="services">24-Hour Services</label>
               </div>
               <div class="checkbox-item">
-                <input type="checkbox" name="source" value="newspaper" id="newspaper">
-                <label id="choose-label" for="newspaper">Newspaper</label>
+                <input type="checkbox" name="source" value="parking" id="parking">
+                <label id="choose-label" for="parking">Parking Space</label>
               </div>
               <div class="checkbox-item">
-                <input type="checkbox" name="source" value="others" id="others">
-                <label id="choose-label" for="others">Others</label>
+                <input type="checkbox" name="source" value="rooms" id="rooms">
+                <label id="choose-label" for="rooms">Rooms</label>
               </div>
             </div>
           </div>
 
         </div>
 
+
+        <section class="main-survey">
+          <!-- survey heading -->
+          <div class="survey-item">
+            <div class="survey-label">
+              
+            </div>
+            <div class="survey-value">
+              <h6>5</h6>
+              <h6>4</h6>
+              <h6>3</h6>
+              <h6>2</h6>
+              <h6>1</h6>
+            </div>
+          </div>
+
+          <!-- survey questions -->
+          <div class="survey-item">
+            <div class="survey-label">
+              <h6>The rooms are clean and well maintained</h6>
+            </div>
+            <div class="survey-value">
+              <input type="radio" name="question_1" value="5" required="">
+              <input type="radio" name="question_1" value="4">
+              <input type="radio" name="question_1" value="3">
+              <input type="radio" name="question_1" value="2">
+              <input type="radio" name="question_1" value="1">
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="survey-label">
+              <h6>The staffs are friendly and approachable</h6>
+            </div>
+            <div class="survey-value">
+              <input type="radio" name="question_2" value="5" required="">
+              <input type="radio" name="question_2" value="4">
+              <input type="radio" name="question_2" value="3">
+              <input type="radio" name="question_2" value="2">
+              <input type="radio" name="question_2" value="1">
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="survey-label">
+              <h6>The pool and facilities are in good condition</h6>
+            </div>
+            <div class="survey-value">
+              <input type="radio" name="question_3" value="5" required="">
+              <input type="radio" name="question_3" value="4">
+              <input type="radio" name="question_3" value="3">
+              <input type="radio" name="question_3" value="2">
+              <input type="radio" name="question_3" value="1">
+            </div>
+          </div>
+
+          <div class="survey-item">
+            <div class="survey-label">
+              <h6>There is a relaxing feeling while im in the resort</h6>
+            </div>
+            <div class="survey-value">
+              <input type="radio" name="question_4" value="5" required="">
+              <input type="radio" name="question_4" value="4">
+              <input type="radio" name="question_4" value="3">
+              <input type="radio" name="question_4" value="2">
+              <input type="radio" name="question_4" value="1">
+            </div>
+          </div>
+
+          <div class="feedback-form">
+            <h6>Additional Comments (Optional)</h6>
+            <!-- User Story #15: Inside the form element, I want to see a text-area at the end for additional comments. -->
+            <textarea name="feedback" id="feedback" cols="80" rows="2"></textarea>
+          </div>
+
+          
+        </section>
+        
+        <!-- User Story #16: Inside the form element, I want to see a button with id="submit" to submit all my inputs. -->
         <div id="btn">
           <input type="submit" >
         </div>
